@@ -7,18 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		303E165D2BCC0F8600C2B692 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303E165C2BCC0F8500C2B692 /* ModalView.swift */; };
+		307EE08E2BCB0B0000359707 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307EE08D2BCB0B0000359707 /* CardView.swift */; };
 		30A2C54C2BB4E4BF003080D0 /* QuitSugarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A2C54B2BB4E4BF003080D0 /* QuitSugarApp.swift */; };
 		30A2C54E2BB4E4BF003080D0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A2C54D2BB4E4BF003080D0 /* ContentView.swift */; };
 		30A2C5502BB4E4C2003080D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30A2C54F2BB4E4C2003080D0 /* Assets.xcassets */; };
 		30A2C5532BB4E4C2003080D0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30A2C5522BB4E4C2003080D0 /* Preview Assets.xcassets */; };
+		30A2C55A2BB4F2AA003080D0 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A2C5592BB4F2AA003080D0 /* TimerView.swift */; };
+		30A2C55C2BB4F2F9003080D0 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A2C55B2BB4F2F9003080D0 /* ProgressView.swift */; };
+		30A2C55E2BB4F305003080D0 /* MotivationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A2C55D2BB4F305003080D0 /* MotivationView.swift */; };
+		30A2C5602BB5016E003080D0 /* TimerFrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A2C55F2BB5016E003080D0 /* TimerFrameView.swift */; };
+		30CC360E2BB9C3A3008B69FD /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CC360D2BB9C3A3008B69FD /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		303E165C2BCC0F8500C2B692 /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
+		307EE08D2BCB0B0000359707 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		30A2C5482BB4E4BF003080D0 /* QuitSugar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuitSugar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30A2C54B2BB4E4BF003080D0 /* QuitSugarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuitSugarApp.swift; sourceTree = "<group>"; };
 		30A2C54D2BB4E4BF003080D0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		30A2C54F2BB4E4C2003080D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30A2C5522BB4E4C2003080D0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		30A2C5592BB4F2AA003080D0 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		30A2C55B2BB4F2F9003080D0 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		30A2C55D2BB4F305003080D0 /* MotivationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotivationView.swift; sourceTree = "<group>"; };
+		30A2C55F2BB5016E003080D0 /* TimerFrameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerFrameView.swift; sourceTree = "<group>"; };
+		30CC360D2BB9C3A3008B69FD /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +46,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		307B47F12BCDBE2E00D5C69D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				30CC360D2BB9C3A3008B69FD /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		30A2C53F2BB4E4BF003080D0 = {
 			isa = PBXGroup;
 			children = (
@@ -52,7 +74,14 @@
 			isa = PBXGroup;
 			children = (
 				30A2C54B2BB4E4BF003080D0 /* QuitSugarApp.swift */,
+				307B47F12BCDBE2E00D5C69D /* Model */,
 				30A2C54D2BB4E4BF003080D0 /* ContentView.swift */,
+				30A2C5592BB4F2AA003080D0 /* TimerView.swift */,
+				307EE08D2BCB0B0000359707 /* CardView.swift */,
+				30A2C55F2BB5016E003080D0 /* TimerFrameView.swift */,
+				30A2C55B2BB4F2F9003080D0 /* ProgressView.swift */,
+				30A2C55D2BB4F305003080D0 /* MotivationView.swift */,
+				303E165C2BCC0F8500C2B692 /* ModalView.swift */,
 				30A2C54F2BB4E4C2003080D0 /* Assets.xcassets */,
 				30A2C5512BB4E4C2003080D0 /* Preview Content */,
 			);
@@ -137,7 +166,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30CC360E2BB9C3A3008B69FD /* Model.swift in Sources */,
+				30A2C55A2BB4F2AA003080D0 /* TimerView.swift in Sources */,
+				30A2C55E2BB4F305003080D0 /* MotivationView.swift in Sources */,
+				30A2C5602BB5016E003080D0 /* TimerFrameView.swift in Sources */,
+				30A2C55C2BB4F2F9003080D0 /* ProgressView.swift in Sources */,
 				30A2C54E2BB4E4BF003080D0 /* ContentView.swift in Sources */,
+				303E165D2BCC0F8600C2B692 /* ModalView.swift in Sources */,
+				307EE08E2BCB0B0000359707 /* CardView.swift in Sources */,
 				30A2C54C2BB4E4BF003080D0 /* QuitSugarApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

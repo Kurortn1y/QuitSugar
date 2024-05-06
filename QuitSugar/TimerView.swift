@@ -9,73 +9,87 @@ import SwiftUI
 
 struct TimerView: View {
     
+    @StateObject var timerViewModel: TimerViewModel = TimerViewModel()
+    @State private var isCounting: Bool = false
     
     var body: some View {
         ZStack {
             Color.kaif
                 .ignoresSafeArea()
-
+            
             VStack {
                 Text("Я не употребляю сахар уже :")
                     .font(.system(size: 18))
-                    .foregroundStyle(.white)
+                    .foregroundColor(.white)
                     .bold()
                     .padding(.bottom, 20)
+                
                 HStack {
                     VStack {
-                        Text("3")
+                        Text(String(format: "%02d", timerViewModel.days))
                             .font(.system(size: 40))
-                            .foregroundStyle(.white)
+                            .foregroundColor(.white)
                             .bold()
                         
                         Text("дней")
-                            .foregroundStyle(.white)
+                            .foregroundColor(.white)
                     }
                     VStack {
-                        Text("10")
+                        Text(String(format: "%02d", timerViewModel.hours))
                             .font(.system(size: 40))
-                            .foregroundStyle(.white)
+                            .foregroundColor(.white)
                             .bold()
                         
                         Text("часов")
-                            .foregroundStyle(.white)
+                            .foregroundColor(.white)
                     }
                     VStack {
-                        Text("37")
+                        Text(String(format: "%02d", timerViewModel.minutes))
                             .font(.system(size: 40))
-                            .foregroundStyle(.white)
+                            .foregroundColor(.white)
                             .bold()
                         
                         Text("минут")
-                            .foregroundStyle(.white)
+                            .foregroundColor(.white)
                     }
                     VStack {
-                        Text("51")
+                        Text(String(format: "%02d", timerViewModel.seconds))
                             .font(.system(size: 40))
-                            .foregroundStyle(.white)
+                            .foregroundColor(.white)
                             .bold()
                         
                         Text("секунд")
-                            .foregroundStyle(.white)
+                            .foregroundColor(.white)
                     }
                 }
                 .overlay(RoundedRectangle(cornerRadius: 40)
-                .stroke(Color.white, lineWidth: 4)
-                .frame(width: 250, height: 100)
-            )
+                    .stroke(Color.white, lineWidth: 4)
+                    .frame(width: 280, height: 100)
+                )
             }
             .padding(.top, -220)
             VStack {
-                Text("C12H22O11")
-                    .font(.system(size: 18))
-                    .foregroundStyle(.white)
-                    .bold()
-                    .padding(.bottom, 10)
+                ButtonView(
+                    title: isCounting ? "Срыв" : "Старт",
+                    action: {
+                        if isCounting {
+                            timerViewModel.stopTimer()
+                            timerViewModel.resetTimer()
+                        } else {
+                            timerViewModel.startTimer()
+                        }
+                        isCounting.toggle()
+                    },
+                    backgroundColor: isCounting ? Color.red : Color.airForse.opacity(0.2))
+                
             }
+            .padding(.top, 400)
         }
     }
 }
 
+
 #Preview {
     TimerView()
 }
+

@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 struct ModalView: View {
     
     @Binding var isShowing: Bool
@@ -121,5 +122,5 @@ struct ModalView: View {
 }
 
 #Preview {
-    MotivationView()
+    ModalView(isShowing: .constant(true))
 }

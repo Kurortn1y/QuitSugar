@@ -39,30 +39,3 @@ struct MotivationView: View {
     MotivationView()
 }
 
-
-
-//ForEach(Motivation.allCases, id: \.self) { motivation in
-//    CardView(motivation: motivation.rawValue)
-//}
-
-
-//ZStack {
-//    Color.airForse
-//        .ignoresSafeArea()
-//    TabView {
-//        ForEach(Motivation.allCases, id: \.self) { motivation in
-//            ZStack{
-//                Color.white
-//                    .opacity(0.6)
-//                VStack(spacing: 40) {
-//                    Image(systemName: "lightbulb.max.fill")
-//                    Text(motivation.rawValue)
-//                }
-//            }
-//        }
-//    }
-//    .tabViewStyle(.page)
-//    .cornerRadius(10)
-//    .padding(20)
-//    .frame(width: 400,height: 350)
-//}
